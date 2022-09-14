@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_margin="10dp"
+    android:id="@+id/cardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgBerita"
+            android:src="@drawable/kpu"
+            android:layout_width="160dp"
+            android:layout_height="120dp"/>
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="KPU Siap Jika Diadukan ke PTUN oleh 9 Parpol Tak Lolos Pemilu"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/txtJudulBerita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtJurnalisItem"
+                android:textColor="@color/color_jurnalis"
+                android:text="Karin Nur Secha"
+                android:layout_below="@+id/txtJudulBerita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtTanggalBerita"
+                android:textSize="10dp"
+                android:text="Selasa, 13 Sep 2022 16:56 WIB"
+                android:layout_below="@+id/txtJudulBerita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
